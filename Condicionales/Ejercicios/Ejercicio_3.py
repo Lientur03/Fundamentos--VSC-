@@ -2,7 +2,6 @@
 # Defina el monto de impuesto de segunda categoría que debe pagar a SII
 # https://www.sii.cl/valores_y_fechas/impuesto_2da_categoria/impuesto2024.htm 
 
-
 # [Diciembre 2024]
 # $ 908.469,01	    $ 2.018.820,00	0,04	$ 36.338,76	    2,20%
 # $ 2.018.820,01	$ 3.364.700,00	0,08	$ 117.091,56	4,52%
@@ -20,7 +19,13 @@ def definir_impuesto(sueldo):
     elif sueldo_int >= 6056460 and sueldo_int < 8075280:
         impuesto = ((sueldo * 15.57)/100)
     elif sueldo_int >= 4710580 and sueldo_int < 6056460:
-        pass
+        impuesto = ((sueldo_int * 10.62)/100)
+    elif sueldo_int >= 3364700 and sueldo_int < 4710580:
+        impuesto = ((sueldo_int * 7.09)/100)
+    elif sueldo_int >= 2018820 and sueldo_int < 3364700:
+        impuesto = ((sueldo_int * 4.52)/100)
+    elif sueldo_int >= 908469 and sueldo_int < 2018820:
+        impuesto = ((sueldo_int * 2.2)/100)
     else:
         impuesto = 0
     print(f"El impuesto de segunda categoría a pagar con el sueldo de {sueldo_int} es: ${impuesto}")
