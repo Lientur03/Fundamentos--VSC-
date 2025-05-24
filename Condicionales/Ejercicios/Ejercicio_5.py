@@ -32,8 +32,7 @@
 
 lista_comidas = ['Lasaña', 'Pollo Arvejado', 'Curanto', 'Sopaipillas Pasadas']
 # 1.- Imprimir la cantidad de elementos de la lista
-for elementos in lista_comidas:
-    print(elementos)
+print(len(lista_comidas))
 
 # 2.- Imprimir la lista completa de comidas
 print(lista_comidas)
