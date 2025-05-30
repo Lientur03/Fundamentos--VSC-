@@ -1,22 +1,13 @@
 import os
-asignaturas = ''
+from data.asignaturas import asignaturas
 
 def obtener_data_asignaturas():
-    archivo = "Gestion_Notas/data/asignaturas.txt"
+    archivo = "data/asignaturas.txt"
+    asignaturas = []
     with open(archivo, 'r') as file:
-        print(file.readlines())
-
-# print()
-# print(len(asignaturas))
-# print(len('hola'))
-# print(len(asignaturas) * len('hola'))
-# print()
-# print(asignaturas)
-
-# if 'ol' in 'Hola':
-#     print(True)
-# else:
-#     print(False)
+        for linea in file.readlines():
+            asignaturas.append(linea)
+        return asignaturas
 
 def obtener_listado_asignaturas():
     print()
@@ -38,7 +29,14 @@ def obtener_asignatura_individual():
 def guardar_nueva_asignatura():
     obtener_listado_asignaturas()
     nueva_asignatura = input('Ingrese nueva asignatura: ')
-    # asignaturas.append(nueva_asignatura.title())
+    asignaturas.append(nueva_asignatura.title())
+
+    archivo_datos = 'asignaturas.py'
+    ubicacion_archivo = os.path.join('Gestion_Notas/data', archivo_datos)
+    ubicacion_archivo = os.path.join.abspath(ubicacion_archivo)
+    ubicacion_archivo = os.path.realpath(ubicacion_archivo)
+    archivo = open(f"{ubicacion_archivo}", "w+")
+    archivo.write(f'asignaturas = {asignaturas}')
+    archivo.close()
     obtener_listado_asignaturas()
 
-obtener_data_asignaturas()
