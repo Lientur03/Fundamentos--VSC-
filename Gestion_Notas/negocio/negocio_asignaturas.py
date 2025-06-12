@@ -7,7 +7,10 @@ def obtener_listado_asignaturas():
     print()
     print('Listado de Asignaturas')
     print('======================')
-    listado_data('asignaturas.py')
+    lista = listado_data('asignaturas.py')
+    for data in sorted(lista):
+        contador += 1
+        print(f'[{contador}] {data}')
 
 # READ DATA
 def obtener_asignatura_individual():
