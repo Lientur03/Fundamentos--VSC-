@@ -31,6 +31,8 @@
 #     print(animales[i][0])
 
 lista_comidas = ['Lasaña', 'Pollo Arvejado', 'Curanto', 'Sopaipillas Pasadas']
+print(lista_comidas[2])
+
 # 1.- Imprimir la cantidad de elementos de la lista
 print(len(lista_comidas))
 
