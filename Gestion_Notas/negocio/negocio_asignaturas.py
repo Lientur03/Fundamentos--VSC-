@@ -27,7 +27,7 @@ def guardar_nueva_asignatura():
     obtener_listado_asignaturas()
     nueva_asignatura = input('Ingrese nueva asignatura: ')
     asignaturas.append(nueva_asignatura.title())
-    guardar_data('asignaturas',asignaturas,'asignaturas.py')
+    guardar_data('asignaturas', asignaturas, 'asignaturas.py')
     
 # UPDATE DATA
 def actualizar_asignatura():

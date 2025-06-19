@@ -1,1 +1,1 @@
-asignaturas = ['Biologia', 'Quimica', 'Fisica']
+asignaturas = ['Biologia', 'Quimica', 'Fisica', 'Educacion Fisica']
