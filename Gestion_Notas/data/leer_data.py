@@ -10,6 +10,7 @@ def listado_data(nombre_archivo):
             lista = docentes
     except:
         print('Archivo no encontrado')
+    
     return lista
 
 def obtener_indice_data(nombre_archivo, búsqueda):
