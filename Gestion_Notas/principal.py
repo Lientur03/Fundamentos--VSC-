@@ -1,11 +1,11 @@
-from negocio.negocio_asignaturas import obtener_listado_asignaturas, guardar_nueva_asignatura, actualizar_asignatura, eliminar_asignatura
-from negocio.negocio_docentes import obtener_listado_docentes, guardar_nuevo_docente, actualizar_docente, eliminar_docente
+from negocio.negocio_asignaturas import obtener_listado_asignaturas,guardar_nueva_asignatura,actualizar_asignatura,eliminar_asignatura
+from negocio.negocio_docentes import obtener_listado_docentes, guardar_nuevo_docente,actualizar_docente,eliminar_docente
 from auxiliares.version import version_actual
 
 def menu_principal():
     print()
-    print("Sistema Gestión Notas")
-    print("=====================")
+    print(f"Sistema Gestión Notas v.{version_actual}")
+    print("==============================")
     print("[1] Gestión de Asignaturas")
     print("[2] Gestión de Docentes")
     print("[0] Salir")
@@ -55,7 +55,7 @@ def ejecucion_principal():
             else:
                 print("Opción Inválida, vuelva a ingresar...")
                 return
-       
+            
         elif opcion_menu == "2":
             sub_menu_docentes()
             opcion_submenu_docentes = input("Seleccione su Opción [0-4]: ")
@@ -73,7 +73,7 @@ def ejecucion_principal():
             else:
                 print("Opción Inválida, vuelva a ingresar...")
                 return
-        
+            
         elif opcion_menu == "0":
             break
         else:
