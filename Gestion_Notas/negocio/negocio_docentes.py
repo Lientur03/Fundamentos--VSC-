@@ -21,7 +21,7 @@ def guardar_nuevo_docente():
     obtener_listado_docentes()
     nuevo_docente = input('Ingrese nuevo docente: ')
     docentes.append(nuevo_docente.title())
-    mensaje = guardar_data('docentes', docentes,'docentes.py')
+    mensaje = guardar_data('docentes', docentes, 'docentes.py')
     print(f'{mensaje} de docente {nuevo_docente}')
 
 # UPDATE DATA

@@ -1,5 +1,5 @@
-from negocio.negocio_asignaturas import obtener_listado_asignaturas,guardar_nueva_asignatura,actualizar_asignatura,eliminar_asignatura
-from negocio.negocio_docentes import obtener_listado_docentes, guardar_nuevo_docente,actualizar_docente,eliminar_docente
+from negocio.negocio_asignaturas import obtener_listado_asignaturas, guardar_nueva_asignatura, actualizar_asignatura, eliminar_asignatura
+from negocio.negocio_docentes import obtener_listado_docentes, guardar_nuevo_docente, actualizar_docente, eliminar_docente
 from auxiliares.version import version_actual
 
 def menu_principal():

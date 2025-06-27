@@ -1,1 +1,1 @@
-docentes = []
+docentes = ['Jeannete Solis', 'Roxana Sandoval', 'Silvia Millahual', 'Marisel Hueche', 'Natalia Montecinos', 'Carla Veloso', 'Karla Chureo', 'Paulina Parada', 'Erika Fica', 'Emmanuel Diaz']
